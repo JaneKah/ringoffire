@@ -1,0 +1,36 @@
+.startscreen {
+    background-image: url('/../assets/img/background_cards.jpg');
+    height: 100vh;
+    width: 100vw;
+    max-width: 100%;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .title {
+        font-size: 100px;
+        color: rgb(80, 21, 21);
+    }
+}
+
+.startscreen_inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.start-label {
+    
+    img {
+        height: 100px;
+        width: 400px;
+        object-fit: cover;
+
+        &:hover {
+            filter: brightness(1.1);
+            cursor: pointer;
+        }
+    }
+}
