@@ -7,17 +7,23 @@
     display: flex;
     justify-content: center;
     align-items: center;
-  
+
     .title {
         font-size: 100px;
         color: white;
         font-weight: 900;
         line-height: normal;
+
+        @media (max-width: 600px) {
+            font-size: 58px;
+        }
     }
 }
 
 .button {
     max-width: 400px;
+
+  
 
     button {
         color: black;
@@ -31,8 +37,12 @@
         &:hover {
             background-color: rgb(252, 215, 123);
         }
+
+        @media (max-width: 600px) {
+                padding: 19px 33px 19px 33px;
+        }
     }
- }
+}
 
 .center {
     display: flex;
@@ -42,9 +52,9 @@
 
 
 .startscreen_inner {
- z-index: 1;
- display: flex;
- align-items: center;
+    z-index: 1;
+    display: flex;
+    align-items: center;
 }
 
 img {
@@ -60,7 +70,7 @@ img {
 }
 
 .start-label {
-    
+
     img {
         height: 100px;
         width: 400px;
@@ -72,3 +82,4 @@ img {
         }
     }
 }
+

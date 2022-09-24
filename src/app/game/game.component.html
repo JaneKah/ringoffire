@@ -6,9 +6,9 @@
     <app-player-mobile (click)="editPlayer(i)" *ngFor="let player of game.players; let i = index;"
         [image]="game.player_images[i]" [playerActive]="i == game.currentPlayer" [name]="player"></app-player-mobile>
 </div>
-<div *ngIf="gameOver" class="gameOver">
+<div *ngIf="gameOver" style="z-index: 9999;" class="gameOver">
     <img src="assets/img/gameover.jpg">
-    <div class="button">
+    <div routerLink="" class="button">
         <button>Restart</button>
     </div>
 </div>
