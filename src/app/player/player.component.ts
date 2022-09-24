@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-player',
@@ -7,8 +7,9 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class PlayerComponent implements OnInit {
 
-@Input() name;
-@Input() playerActive: boolean = false;
+  @Input() name;
+  @Input() image = 'profile.png';
+  @Input() playerActive: boolean = false;
 
   constructor() { }
 

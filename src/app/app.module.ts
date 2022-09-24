@@ -23,7 +23,9 @@ import { provideDatabase,getDatabase } from '@angular/fire/database';
 import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 import { AngularFireModule } from '@angular/fire/compat';
 import { DialogAddPlayerMessageComponent } from './dialog-add-player-message/dialog-add-player-message.component';
-
+import { MatSelectModule } from '@angular/material/select';
+import { EditPlayerComponent } from './edit-player/edit-player.component';
+import { PlayerMobileComponent } from './player-mobile/player-mobile.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +35,9 @@ import { DialogAddPlayerMessageComponent } from './dialog-add-player-message/dia
     PlayerComponent,
     DialogAddPlayerComponent,
     GameInfoComponent,
-    DialogAddPlayerMessageComponent
+    DialogAddPlayerMessageComponent,
+    EditPlayerComponent,
+    PlayerMobileComponent
   ],
   imports: [
     AngularFireModule.initializeApp(environment.firebase),
@@ -48,6 +52,7 @@ import { DialogAddPlayerMessageComponent } from './dialog-add-player-message/dia
     MatButtonModule,
     MatDialogModule,
     MatChipsModule,
+    MatSelectModule,
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideAuth(() => getAuth()),
     provideDatabase(() => getDatabase()),
