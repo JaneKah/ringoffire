@@ -53,6 +53,7 @@ import { PlayerMobileComponent } from './player-mobile/player-mobile.component';
     MatDialogModule,
     MatChipsModule,
     MatSelectModule,
+    MatDialogModule,
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideAuth(() => getAuth()),
     provideDatabase(() => getDatabase()),
